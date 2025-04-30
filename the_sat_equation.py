@@ -36,9 +36,21 @@ def sat_equation(cnf, n):
     for j in range(len(cnf)):
         v = 0
         for i in range(n):
-            v += int(cnf[j][n - 1 - i] > 0) * 2 ** i # int(cnf[j][n - 1 - i] > 0) << i -> for increase the performance.
-        sat += 2 ** v # sat |= 1 << v -> for increase the performance.
+            v += int(cnf[j][n - 1 - i] > 0) * 2 ** i
+        sat += 2 ** v
     return sat
+
+"""
+# Optimized
+def sat_equation(cnf, n):
+    sat = 0
+    for j in range(len(cnf)):
+        v = 0
+        for i in range(n):
+            v |= (cnf[j][n - 1 - i] > 0) << i
+        sat |= 1 << v
+    return sat
+"""
 
 
 if __name__ == '__main__':
