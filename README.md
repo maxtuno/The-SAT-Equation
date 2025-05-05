@@ -104,6 +104,7 @@ if __name__ == '__main__':
 ```
 
 # references:
+https://www.academia.edu/129202540/A_Unique_Encoding_of_Satisfying_Assignments_for_Balanced_CNFs
 https://www.academia.edu/27914083/NUMBER_THEORY_EQUATION_OF_SAT
 https://www.academia.edu/28123997/PROOF_OF_ARITHMETIC_BOOLEAN_SATISFIABILITY_EQUATION
 https://github.com/maxtuno/SAT_EQUATION
